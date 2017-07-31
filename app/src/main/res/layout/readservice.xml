@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<TextView
+    android:id="@+id/txtTitle"
+    android:layout_marginTop="12dp"
+    android:layout_gravity="center_horizontal"
+    android:textStyle="bold"
+    android:textColor="@color/blacktext"
+    android:text="Information title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <WebView
+        android:layout_marginBottom="20dp"
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </WebView>
+
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+
+    <Button
+        android:onClick="askALawyer"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorPrimary"
+        android:textAlignment="center"
+        android:text="Talk To A lawyer"
+        android:layout_alignParentBottom="true"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
